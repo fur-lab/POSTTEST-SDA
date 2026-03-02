@@ -1,9 +1,7 @@
 #include <iostream>
 using namespace std ;
 
-// pseudocodenya belum 
-
-int Cari_Min(int A[], int n, int &index_Min) {
+int FindMin(int A[], int n, int &index_Min) {
     int min = A[0] ;
     index_Min = 0 ;
 
@@ -20,7 +18,7 @@ int main() {
     int A[8] = {1, 1, 2, 3, 5, 8, 13, 21} ;
     int index_Min ;
 
-    int Minimum = Cari_Min(A, 9, index_Min) ;
+    int Minimum = FindMin(A, 9, index_Min) ;
 
     cout << "Nilai Minimum : " << Minimum << endl ;
     cout << "Index Minimum : " << index_Min << endl ;
