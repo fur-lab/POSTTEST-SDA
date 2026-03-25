@@ -242,7 +242,7 @@ void Selection_Sort (Data_Hewan DH[], int n) {
 
     for (int i = 0 ; i < n ; i++) {
         int Min = i ;
-        for (int j = i ; j < n ; j++) {
+        for (int j = i + 1 ; j < n ; j++) {
             if ((DH + j)->Harga_Hewan < (DH + Min)->Harga_Hewan) {
                 Min = j ;
             }
